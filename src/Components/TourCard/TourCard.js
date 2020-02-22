@@ -1,35 +1,34 @@
 import React, { Component } from "react";
 import "./styles.scss";
-import hollywood from "./../../Images/hollywood.jpg";
+// import placeholder from "./../../Images/placeholder.jpg";
 
 export default class TourCard extends Component {
+  state = {
+    showInfo: false
+  };
+  handleInfo = () => {
+    this.setState({ showInfo: this.state.showInfo ? false : true });
+  };
   render() {
+    const { city, img, name, info } = this.props.tour;
     return (
       <article className="tour">
         <div className="img-container">
-          <img src={hollywood} alt="city" />
+          <img src={img} alt="city" />
           <span className="close-btn">
             <i className="fas fa-window-close" />
           </span>
         </div>
         <div className="tour-info">
-          <h3>City name</h3>
-          <h4>Tour name</h4>
+          <h3>{city}</h3>
+          <h4>{name}</h4>
           <h5>
             Info
-            <span>
+            <span onClick={this.handleInfo}>
               <i className="fas fa-caret-square-down" />
             </span>
           </h5>
-          <p>
-            Fugiat non consequat veniam minim minim voluptate ut culpa laborum
-            consectetur commodo ad. Excepteur est in fugiat fugiat nulla
-            cupidatat officia excepteur irure sit quis adipisicing. Ad eu
-            ullamco et cupidatat culpa laborum tempor incididunt. Quis veniam
-            Lorem fugiat do laboris occaecat ullamco minim proident nostrud qui
-            sint excepteur. Cillum consectetur mollit commodo do anim tempor et
-            incididunt magna labore ut id qui.
-          </p>
+          {this.state.showInfo && <p>{info}</p>}
         </div>
       </article>
     );
