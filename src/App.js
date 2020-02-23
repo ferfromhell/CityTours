@@ -4,6 +4,7 @@ import "./App.scss";
 
 import Navbar from "./Components/Navbar/Navbar";
 import Home from "./Components/Home";
+import About from "./Components/About";
 import TourList from "./Components/TourList";
 
 function App() {
@@ -30,13 +31,6 @@ function App() {
   );
 }
 
-function About() {
-  return (
-    <div>
-      <h2>About</h2>
-    </div>
-  );
-}
 function Contact() {
   return (
     <div>

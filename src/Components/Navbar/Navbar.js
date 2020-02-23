@@ -21,7 +21,7 @@ export default function Navbar() {
         </li>
         <li>
           <NavLink to="/about" activeClassName="is-active" className="nav-link">
-            About
+            About Us
           </NavLink>
         </li>
         <li>

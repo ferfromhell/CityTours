@@ -15,7 +15,7 @@ export default class TourCard extends Component {
     return (
       <article className="tour">
         <div className="img-container">
-          <img src={img} alt="city" />
+          <img src={img} alt="city" className="city-img" />
           <span className="close-btn" onClick={() => removeTour(id)}>
             <i className="fas fa-window-close" />
           </span>
