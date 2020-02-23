@@ -1,5 +1,7 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "./Navbar.scss";
+
 import logo from "./../../Images/logo3.png";
 
 export default function Navbar() {
@@ -8,24 +10,33 @@ export default function Navbar() {
       <img src={logo} alt="Logo" className="logo" />
       <ul className="nav-links">
         <li>
-          <a href="/" className="nav-link">
+          <NavLink
+            exact={true}
+            to="/"
+            activeClassName="is-active"
+            className="nav-link"
+          >
             Home
-          </a>
+          </NavLink>
         </li>
         <li>
-          <a href="/" className="nav-link">
+          <NavLink to="/about" activeClassName="is-active" className="nav-link">
             About
-          </a>
+          </NavLink>
         </li>
         <li>
-          <a href="/" className="nav-link active">
+          <NavLink to="/tours" activeClassName="is-active" className="nav-link">
             Tours
-          </a>
+          </NavLink>
         </li>
         <li>
-          <a href="/" className="nav-link">
+          <NavLink
+            to="/contact"
+            activeClassName="is-active"
+            className="nav-link"
+          >
             Contact
-          </a>
+          </NavLink>
         </li>
       </ul>
     </nav>
