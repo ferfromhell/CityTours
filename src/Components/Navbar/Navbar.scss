@@ -61,21 +61,7 @@
 }
 @media screen and (min-width: 992px) {
   //ipad
-  // .navbar {
-  //   background-color: $primaryOrange;
-  //   height: 190px;
-  // }
-  // .nav-links {
-  //   grid-template-columns: repeat(4, 1fr);
-  // }
-}
-@media screen and (min-width: 1140px) {
-  //PC
-  // .navbar {
-  //   grid-template-columns: auto 1fr;
-  //   height: 90px;
-  // }
-  // .nav-links {
-  //   grid-template-columns: repeat(4, 1fr);
-  // }
+  .nav-link {
+    font-size: 1.5rem;
+  }
 }
