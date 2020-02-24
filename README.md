@@ -32,4 +32,4 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 ## Credits
 
-Built & Designed by Fernando Lujan
+Built & Designed by _**Fernando Lujan**_
