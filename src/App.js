@@ -6,11 +6,12 @@ import Navbar from "./Components/Navbar/Navbar";
 import Home from "./Components/Home";
 import About from "./Components/About";
 import TourList from "./Components/TourList";
+import Contact from "./Components/Contact";
 
 function App() {
   return (
     <Router>
-      <div>
+      <div className="container">
         <Navbar />
         <Switch>
           <Route exact path="/">
@@ -28,14 +29,6 @@ function App() {
         </Switch>
       </div>
     </Router>
-  );
-}
-
-function Contact() {
-  return (
-    <div>
-      <h2>Contact</h2>
-    </div>
   );
 }
 

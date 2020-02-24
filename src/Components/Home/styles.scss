@@ -22,8 +22,6 @@
 }
 .home-content {
   width: 40vw;
-  padding-top: 8rem;
-  padding-left: 4rem;
   color: $primaryWhite;
   position: relative;
   h1 {
@@ -49,5 +47,65 @@
     color: $primaryWhite;
     text-decoration: none;
     font-size: 2rem;
+  }
+}
+@media screen and (min-width: 320px) {
+  .home {
+    height: calc(100vh - 100px);
+  }
+  .home-content {
+    width: 100vw;
+    padding: 1rem;
+    margin: 0 auto;
+    h1 {
+      text-transform: capitalize;
+      font-size: 2rem;
+      font-weight: 900;
+    }
+    p {
+      padding-top: 2rem;
+    }
+  }
+}
+@media screen and (min-width: 375px) {
+  .home {
+    height: calc(100vh - 70px);
+  }
+  .home-content {
+    padding: 2.2rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .home {
+    height: calc(100vh - 70px);
+  }
+  .home-content {
+    padding: 5rem 3rem;
+    width: 60vw;
+    h1 {
+      text-transform: capitalize;
+      font-size: 3.2rem;
+      font-weight: 900;
+    }
+    p {
+      font-size: 1.5rem;
+      padding-top: 2.5rem;
+    }
+  }
+}
+@media screen and (min-width: 992px) {
+  .home {
+    height: calc(100vh - 70px);
+  }
+  .home-content {
+    float: left;
+    width: 60vw;
+    h1 {
+      text-transform: capitalize;
+      font-size: 3rem;
+    }
+    p {
+      padding-top: 2.5rem;
+    }
   }
 }
