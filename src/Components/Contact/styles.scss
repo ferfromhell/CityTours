@@ -1,0 +1,64 @@
+@import "../../index.scss";
+
+.contact-form {
+  // height: 50vh;
+  width: 40vw;
+  margin: 3rem auto;
+  border-collapse: collapse;
+  border-radius: 1rem;
+  background-color: $primaryBlack;
+  color: $primaryWhite;
+  text-align: center;
+  h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 2rem;
+    text-transform: uppercase;
+    font-style: italic;
+  }
+}
+.form-group {
+  color: $primaryWhite;
+  width: 60%;
+  margin: 1rem auto;
+  label {
+    display: block;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    text-align: left;
+    margin: 0.5rem;
+  }
+  input {
+    width: 100%;
+  }
+  textarea {
+    width: 100%;
+  }
+}
+.submit-btn {
+  background-color: $primaryOrange;
+  color: $primaryWhite;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  border-collapse: collapse;
+  border: 1px solid $primaryGrey;
+  border-radius: 1rem;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .contact-form {
+    width: 90vw;
+    h1 {
+      font-size: 2.5rem;
+      padding: 1.5rem;
+    }
+  }
+  .form-group {
+    width: 80%;
+    label {
+      font-size: 1.1rem;
+      margin: 0.5rem;
+    }
+  }
+}

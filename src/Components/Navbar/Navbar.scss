@@ -1,0 +1,67 @@
+@import "../../index.scss";
+
+.navbar {
+  background: $primaryOrange;
+  display: grid;
+  margin: 0 auto;
+  width: 100vw;
+}
+.nav-links {
+  align-self: center;
+  list-style-type: none;
+  display: grid;
+  text-align: center;
+}
+.nav-link {
+  color: $primaryGrey;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: all 0.3 linear;
+  &:hover {
+    color: $primaryWhite;
+    font-size: 1.6rem;
+    border-bottom: 3px solid;
+  }
+}
+.is-active {
+  color: $primaryWhite;
+  border-bottom: 2px solid;
+}
+.logo {
+  height: 90%;
+}
+@media screen and (min-width: 320px) {
+  .navbar {
+    background-color: $primaryOrange;
+    min-height: 100px;
+    grid-template-columns: 1fr;
+  }
+  .logo {
+    height: 80%;
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+  }
+  .nav-links {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .nav-link {
+    font-size: 0.8rem;
+    &:hover {
+      font-size: 1rem;
+    }
+  }
+}
+@media screen and (min-width: 481px) {
+  .navbar {
+    background-color: $primaryOrange;
+    min-height: 70px;
+    grid-template-columns: auto 1fr;
+  }
+}
+@media screen and (min-width: 992px) {
+  //ipad
+  .nav-link {
+    font-size: 1.5rem;
+  }
+}

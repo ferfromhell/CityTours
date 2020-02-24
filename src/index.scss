@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$primaryBlack: #222;
+$primaryGreen: #82b340;
+$primaryWhite: #fff;
+$primaryGrey: #cacaca;
+$primaryOrange: #f13030;
+
+body {
+  background: $primaryWhite;
+  color: $primaryGreen;
+  font-family: "Monserrat", sans-serif;
+  width: 100vw;
+}
